@@ -1,0 +1,129 @@
+.navbar-brand, .navbar-nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    width: 145px;
+    padding: 20px;
+    height: 65px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-right: 0.5px solid black;
+    border-bottom-right-radius: 50px;
+}
+
+.navbar-form {
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.hoverrect {
+    background-color: black;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    width: 555px;
+    height: 306.4px;
+    -webkit-box-shadow: 5px 5px 5px 5px black;
+    -moz-box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+.hoverrect a {
+    color: #fff;
+    width: 555px;
+    height: 306.4px;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.hoverrect a:hover {
+    transition: 0.2s;
+    background: #000;
+    opacity: .80;
+    filter: alpha(opacity=80);
+}
+
+.hoverrect a span {
+    display: none;
+}
+
+.hoverrect a:hover span {
+    display: block;
+}
+
+body {
+    background: url(img/wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.navbar-default {
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav li a:hover {
+    clear: left;
+    transition: 0.3s;
+    -webkit-box-shadow: 5px 0px 5px 0px black;
+    -moz-box-shadow: 5px 0px 5px 0px black;
+    box-shadow: 5px 0px 5px 0px black;
+}
+
+.navbar-nav li a.active {
+    -webkit-box-shadow: 5px 0px 5px 0px black;
+    -moz-box-shadow: 5px 0px 5px 0px black;
+    box-shadow: 5px 0px 5px 0px black;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-brand {
+    width: 170px;
+    padding-right: 0px;
+    border: 0px
+}
+
+footer {
+    -webkit-box-shadow: 0px -5px 15px 15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px -5px 15px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px -5px 15px 15px rgba(0, 0, 0, 0.6);
+  	width: 100%;
+  	font: normal 18px sans-serif;
+  	padding: 20px;
+  	margin-top: 40px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+footer #footer-menu a{
+	display:inline-block;
+	text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+footer #footer-menu a:hover{
+  color: black;
+}
+
+footer #footer-menu a.selected{
+  color: black;
+}
+
+.main-container {
+    background-color: white;
+}

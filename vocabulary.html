@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- jQuery backup -->
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='script/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <!-- javascript CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- javascript backup -->
+    <script>
+        $.fn.modal || document.write('<script src="script/bootstrap.min.js">\x3C/script>')
+    </script>
+    <script src="script/javascript.js"></script>
+</head>
+
+<body>
+  <script>
+      $(document).ready(function() {
+          var bodyColor = $('body').css('color');
+          if (bodyColor != 'rgb(51, 51, 51)') {
+              $("head").prepend('<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">');
+          }
+      });
+  </script>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="index.html">Open German Course</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="collapsible-nav">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="vocabulary.html" class="active">Vocabulary</a></li>
+                  <li><a href="grammar.html">Grammar</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                  <li><a href="writing.html">Writing Sample</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+<div class="container main-container">
+  <div class="row">
+      <div class="col-sm-3">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-text-background">
+                        </span> Vocabulary</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="#">A1 Vocabulary</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">A2 Vocabulary</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">B1 Vocabulary</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-book">
+                        </span> Grammar</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                          <tr>
+                              <td>
+                                  <a href="#">A1 Grammar</a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <a href="#">A2 Grammar</a>
+                              </td>
+                          </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">B1 Grammar</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-list-alt">
+                        </span>Quiz</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="#">A1 Quiz</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">A2 Quiz</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">B1 Quiz</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-pencil">
+                        </span> Writing Sample</a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="#">A1 Writing</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">A2 Writing</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">B1 Writing</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <h3><a href="#">A1 Vocabulary</a></h3>
+        <h3><a href="#">A2 Vocabulary</a></h3>
+        <h3><a href="#">B1 Vocabulary</a></h3>
+        <p></p>
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+      </div>
+
+  </div>
+
+  </div>
+
+  <footer>
+  <p>CONTACT: opengermancourse@gmail.com</p>
+  <p>Built with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+  </footer>
+</body>
+
+</html>
