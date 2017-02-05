@@ -27,6 +27,18 @@
 </head>
 
 <body>
+
+  <script>
+  jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('#preloader').fadeOut('slow', function () {
+            });
+        },0);
+    });
+});
+</script>
+
   <script>
       $(document).ready(function() {
           var bodyColor = $('body').css('color');
@@ -35,6 +47,8 @@
           }
       });
   </script>
+
+  <div id="preloader"></div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
